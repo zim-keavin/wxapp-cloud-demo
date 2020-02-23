@@ -1,0 +1,2 @@
+<!--pages/showVideo/showVideo.wxml-->
+<web-view src="{{items[id]}}"></web-view>

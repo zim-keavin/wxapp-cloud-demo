@@ -1,0 +1,87 @@
+{
+	"miniprogramRoot": "miniprogram/",
+	"cloudfunctionRoot": "cloudfunctions/",
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"appid": "xxxx",
+	"projectname": "xxxx",
+	"libVersion": "2.7.7",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"miniprogram": {
+			"current": 6,
+			"list": [
+				{
+					"id": -1,
+					"name": "photo",
+					"pathName": "pages/photo/photo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "video",
+					"pathName": "pages/video/video",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "约拍",
+					"pathName": "pages/appointment/appointment",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "关于我们",
+					"pathName": "pages/about/about",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "活动摄影",
+					"pathName": "pages/activityPhoto/activityPhoto",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "产品摄影",
+					"pathName": "pages/productPhoto/productPhoto",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "商业宣传片",
+					"pathName": "pages/commercialVideo/commercialVideo",
+					"query": "",
+					"scene": null
+				}
+			]
+		}
+	}
+}

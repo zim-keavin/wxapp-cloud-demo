@@ -1,0 +1,62 @@
+{
+  "pages": [
+    "pages/video/video",
+    "pages/photo/photo",
+    "pages/appointment/appointment",
+    "pages/about/about",
+    "pages/productPhoto/productPhoto",
+    "pages/activityPhoto/activityPhoto",
+    "pages/portrayPhoto/portrayPhoto",
+    "pages/IDPhoto/IDPhoto",
+    "pages/showTweets/showTweets",
+    "pages/commercialVideo/commercialVideo",
+    "pages/TikTokVideo/TikTokVideo",
+    "pages/wechatVideo/wechatVideo",
+    "pages/activityVideo/activityVideo",
+    "pages/microFilm/microFilm",
+    "pages/mgcartoon/mgcartoon",
+    "pages/showVideo/showVideo",
+    "pages/eCommerceVideo/eCommerceVideo",
+    "pages/portrayVideo/portrayVideo"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "秋刀鱼传媒",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#aaa",
+    "selectedColor": "#15559a",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/video/video",
+        "iconPath": "images/视频.png",
+        "selectedIconPath": "images/视频2.png",
+        "text": "视频"
+      },
+      {
+        "pagePath": "pages/photo/photo",
+        "iconPath": "images/摄影.png",
+        "selectedIconPath": "images/摄影2.png",
+        "text": "摄影"
+      },
+      {
+        "pagePath": "pages/appointment/appointment",
+        "iconPath": "images/约拍.png",
+        "selectedIconPath": "images/约拍2.png",
+        "text": "约拍"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "iconPath": "images/关于我们.png",
+        "selectedIconPath": "images/关于我们2.png",
+        "text": "关于我们"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

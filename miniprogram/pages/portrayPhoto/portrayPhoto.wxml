@@ -1,0 +1,18 @@
+<!--pages/portrayPhoto/portrayPhoto.wxml-->
+
+<view class="cu-card article no-card">
+  <view style="magin-bottom:2px" wx:for="{{portaryTweets}}" data-id='{{index}}'bindtap='toPortaryTweets' wx:key class="cu-item shadow">
+    <view class="title">{{item.title}}</view>
+    <view class="content">
+      <image src="/images/123.jpg" mode="aspectFill"></image>
+      <view class="desc">
+        <view class='text-content'decode="true"> {{item.content}}</view>
+        <view>
+          <view class='cu-tag bg-red light sm round'>{{item.author}}</view>
+          <view class='cu-tag bg-green light sm round'>{{item.time}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  
+</view>

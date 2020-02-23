@@ -1,0 +1,12 @@
+<view wx:for='{{items}}' wx:key>
+  
+  <view class='videoView' data-id='{{index}}'>
+  <video src='{{item.video}}' class='video' id='my{{index}}'>
+  </video>
+  <image class='cover' src='{{item.cover}}' wx:if='{{show!=index}}' bindtap='cover' data-id='{{index}}'></image>
+  <view class='time' wx:if='{{show!=index}}'>{{item.time}}</view>
+  </view>
+
+  <text class='text'>{{item.introduce}}</text>
+  <view class='aline' wx:if="{{index<items.length-1}}"></view>
+</view>

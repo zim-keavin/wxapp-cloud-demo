@@ -1,0 +1,55 @@
+t/* pages/appointment/appointment.wxss */
+page{
+  background-color: #f1f1f1;
+}
+.head{
+  display: flex;
+  justify-content: center;
+}
+.image{
+  width: 625rpx;
+  height: 550rpx;
+}
+.text{
+  margin-top: 10rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  margin-bottom: 30rpx;
+  font-size: 32rpx;
+  font-weight: 300;
+  text-align: justify;
+}
+.aline{
+  margin: 0rpx 50rpx;
+  margin-top: 40rpx;
+  height: 2rpx;
+  background-color: rgba(0, 0, 0, 0.288);
+}
+.formTitle{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+  font-size: 40rpx;
+  font-weight: 800;
+}
+.viceFormTitle{
+  margin: 30rpx;
+  font-size: 37rpx;
+}
+checkbox .wx-checkbox-input{
+   border-radius: 50%;/* 圆角 */
+   width: 25rpx; /* 背景的宽 */
+   height: 25rpx; /* 背景的高 */
+}
+.warn{
+  height: 20rpx;
+  width: 450rpx;
+  margin-left: 150rpx;
+  margin-top: 15rpx;
+  font-size: 30rpx;
+  color: red;
+  display: flex;
+  justify-content:center;
+}

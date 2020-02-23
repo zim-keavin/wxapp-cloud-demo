@@ -1,0 +1,3 @@
+<view>
+  <image class='image' src='{{image}}' bindtap='preview'></image>
+</view>

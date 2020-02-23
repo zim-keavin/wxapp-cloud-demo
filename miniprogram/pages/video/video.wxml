@@ -1,0 +1,34 @@
+<!--pages/video/video.wxml-->
+<!--pages/photo/photo.wxml-->
+<view>
+  <swiper style='heigsadsasdsdasdasdas4450rpx;' class="card-swiper {{DotStyle?'square-dot':'round-dot'}}" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500" bindchange="cardSwiper" indicator-color="#8799a3" indicator-active-color="#0081ff">
+  <swiper-item wx:for="{{tower}}" wx:key class="{{cardCur==index?'cur':''}}">
+   <image class='bg-img shadow-blur swiperImg' src='{{item.url}}'mode="scaleToFill"></image>
+  </swiper-item>
+</swiper>
+         <!-- icon图区 -->
+<view class="cu-list grid col-{{gridCol}} {{gridBorder?'':'no-border'}}">
+  <view class="cu-item " wx:for="{{iconList}}" wx:key wx:if="{{index<gridCol*3}}" data-id='{{index}}' bindtap='navigate'>
+    <view class='icon-{{item.icon}} text-{{item.color}}' ></view>
+    <text>{{item.name}}</text>
+  </view>
+
+   <view class="cu-item " wx:for="{{iconList2}}" wx:key wx:if="{{index<gridCol*3}}" data-id='{{index}}' bindtap='navigate2'>
+    <view class='icon-{{item.icon}} text-{{item.color}}' ></view>
+    <text>{{item.name}}</text>
+  </view>
+</view>
+
+<view class='solidView'><view class='solid'></view></view>
+
+<view class='allContainer' wx:for="{{videoTweets}}" bindtap="toVideoTweets" data-id='{{index}}'>
+  <view class='containerView'>
+    <view class='containerText'>
+    <view class='title'>{{item.title}}</view>
+    <view class='content'>{{item.content}}</view>
+    </view>
+    <image class='image' src='{{item.photo}}' mode='widthFix'></image>
+  </view>
+    <view class='solidView'><view class='b'></view></view>
+</view>
+</view>

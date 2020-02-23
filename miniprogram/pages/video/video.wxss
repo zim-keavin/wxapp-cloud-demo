@@ -1,0 +1,49 @@
+/* pages/video/video.wxss */
+/* pages/photo/photo.wxss */
+page{
+  background-color: white;
+}
+.swiperView{
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+}
+.solid{
+  height: 1rpx;
+  width: 85%;
+}
+.solidView{
+  display: flex;
+  justify-content: center;
+}
+
+.allContainer{
+  margin: 45rpx;
+}
+.containerView{
+  display: flex;
+}
+.containerText{
+  flex: 1
+}
+.content{
+  color: #888;
+  margin-top: 30rpx;
+}
+.title{
+  font-size: 35rpx;
+  font-weight:500;
+}
+.image{
+  width: 200rpx;
+  height: 200rpx;
+  margin-top: 8rpx;
+}
+.b{
+  margin-top: 20rpx;
+  height: 1rpx;
+  width: 80%;
+  background-color: rgb(245, 241, 241);
+}
+.swiperImg{
+  box-shadow:4px 4px 10px rgb(104, 103, 103);
+}

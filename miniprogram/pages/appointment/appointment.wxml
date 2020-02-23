@@ -1,0 +1,134 @@
+<!--pages/appointment/appointment.wxml-->
+<view>
+
+  <view class='head'>
+    <image src='{{head}}' mode='widthFix' class='image'></image>
+  </view>
+
+  <!-- <view class='text'>
+    <text space="emsp">  亲~~欢迎光顾秋刀鱼传媒，在这里，我们团队将为你们提供专业化的拍摄、制作服务，同时也为客户定点投放，进行客户引流。</text>
+  </view> -->
+
+  <view class='aline'></view>
+
+  <view class='formTitle' style="margin-top: 50rpx">约拍内容</view>
+
+  <form bindsubmit="onConfirm">
+
+    <!-- 视频拍摄 -->
+    <view class='viceFormTitle'>视频拍摄：
+      <checkbox-group bindchange="checkboxChange01">
+
+        <view class="cu-form-group margin-top"> 
+          
+          <checkbox class='round blue' value="{{videoItems[0].name}}" checked="{{videoItems[0].checked}}">
+            <text class='title'>活动视频</text>
+          </checkbox>
+         
+          <checkbox class='round blue' value="{{videoItems[1].name}}" checked="{{videoItems[1].checked}}" style="margin-right: 18rpx">
+            <text class='title'>商业宣传片</text>
+          </checkbox>
+
+          <checkbox class='round blue' value="{{videoItems[2].name}}" checked="{{videoItems[2].checked}}" style="margin-right: 57rpx">
+            <text class='title'>微电影</text>
+          </checkbox>
+
+        </view>
+
+        <view class="cu-form-group">
+
+          <checkbox class='round blue' value="{{videoItems[3].name}}" checked="{{videoItems[3].checked}}">
+            <text class='title'>电商视频</text>
+          </checkbox>
+
+          <checkbox class='round blue' value="{{videoItems[4].name}}" checked="{{videoItems[4].checked}}" style="margin-right: 10rpx">
+            <text class='title'>抖音短视频</text>
+          </checkbox>
+
+          <checkbox class='round blue' value="{{videoItems[5].name}}" checked="{{videoItems[5].checked}}" style="margin-left: 10rpx">
+            <text class='title'>朋友圈视频</text>
+          </checkbox>
+
+        </view>
+
+      </checkbox-group>
+
+      <view class="cu-form-group" style="margin-top: 2rpx">
+        <text class='title'>其 他：</text>
+        <input class='radius' placeholder='10字以内' name='videoOther'></input>
+      </view>
+
+    </view>
+
+    <!-- 平面拍摄 -->
+    <view class='viceFormTitle'>平面拍摄：
+
+      <checkbox-group bindchange="checkboxChange02">
+        <view class="cu-form-group margin-top">
+          <checkbox class='round blue' value="{{photoItems[0].name}}" checked="{{photoItems[0].checked}}">
+            <text class='title'>商品摄影</text>
+          </checkbox>
+
+          <checkbox class='round blue' value="{{photoItems[1].name}}" checked="{{photoItems[1].checked}}">
+            <text class='title'>活动跟拍</text>
+          </checkbox>
+
+          <checkbox class='round blue' value="{{photoItems[2].name}}" checked="{{photoItems[2].checked}}">
+            <text class='title'>写真</text>
+          </checkbox>
+
+        </view>
+        <view class="cu-form-group">
+          <checkbox class='round blue' value="{{photoItems[3].name}}" checked="{{photoItems[3].checked}}">
+            <text class='title' style="margin-right: 65rpx">最美证件照</text>
+          </checkbox>
+
+          <text class='title' decode="true">其 他：</text>
+          <input class='radius' name='photoOther' placeholder="10字以内"></input>
+
+        </view>
+      </checkbox-group>
+
+    </view>
+
+    <!-- 用户信息 -->
+    <view>
+      <view class='formTitle'>客户信息</view>
+
+      <view class="cu-form-group margin-top">
+        <text class='title'>联系人：</text>
+        <input class='radius' name='name' placeholder="姓名"></input>
+      </view>
+
+      <view class="cu-form-group">
+        <text class='title' decode="true">微 &ensp; 信：</text>
+        <input class='radius' name='weixin' placeholder="微信号"></input>
+      </view>
+
+      <view class="cu-form-group">
+        <text class='title' decode="true">手 &ensp; 机：</text>
+        <input class='radius' name='phoneNum' placeholder="手机/座机号码" bindinput="checkPhoneNum" bindblur="checkPhoneNum"></input>
+      </view>
+
+      <view class="cu-form-group margin-top" wx:hide="{{modalName==null}}">
+        <textarea name="content" maxlength="100" disabled="{{modalName!=null}}" placeholder-class='placeholder' placeholder-style="font-size: 30rpx" placeholder="拍摄内容（100字以内）"></textarea>
+      </view>
+
+      <view class="margin-top" style=" display:flex;justify-content:center; align-items:center">
+        <text>如有问题，可加客服小秋微信13692088342咨询哟</text>
+      </view>
+      <view style=" display:flex;justify-content:center; align-items:center">
+        <text>(提交信息后，将会有工作人员及时联系你，谢谢)</text>
+      </view>
+
+      <view class='warn'>{{warnText}}</view>
+
+      <view class="padding-xl">
+        <button class='cu-btn block bg-green margin-tb-sm lg' form-type="submit">提交</button>
+      </view>
+
+    </view>
+
+  </form>
+
+</view>

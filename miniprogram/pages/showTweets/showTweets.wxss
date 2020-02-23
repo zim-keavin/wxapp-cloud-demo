@@ -1,0 +1,4 @@
+/* pages/showPhoto/showPhoto.wxss */
+page{
+  background-color: white;
+}

@@ -1,0 +1,7 @@
+<view wx:for='{{productPhoto}}' wx:key>
+  <view class='imageView' bindtap='toProductPhoto' data-id='{{index}}'>
+  <image src='{{item.cover}}' class='image'></image>
+  </view>
+  <text class='text'>{{item.introduce}}</text>
+  <view class='aline' wx:if="{{index<items.length-1}}"></view>
+</view>

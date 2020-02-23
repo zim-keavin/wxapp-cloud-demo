@@ -1,0 +1,2 @@
+<!--pages/showPhoto/showPhoto.wxml-->
+<web-view src="{{url}}"></web-view>
