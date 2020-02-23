@@ -19,6 +19,6 @@
 
 ## 其他
   这个demo使用了ColorUI组件库(https://github.com/weilanwl/ColorUI)
-  以下博客中，可以看到相关的云开发数据库和存储格式
+-  以下博客中，可以看到相关的云开发数据库和存储格式
 - [相关博客](https://blog.csdn.net/zimkeavin/article/details/97117491)
 - [相关博客](https://blog.csdn.net/zimkeavin/article/details/97136378)
